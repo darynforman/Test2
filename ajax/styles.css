@@ -1,0 +1,142 @@
+#poster {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#posterQuote {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+#generateBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#generateBtn:hover {
+  background-color: #45a049;
+}
+
+#generateBtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#status {
+  text-align: center;
+  margin: 10px 0;
+  min-height: 24px;
+  color: #666;
+  font-style: italic;
+}
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0ff;  /* Soft pastel purple */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+h1 {
+  text-align: center;
+  color: #5a4a78;  /* Deeper purple for contrast */
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Button Styles */
+#generateBtn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #9d8bff, #7b6bcf);  /* Soft purple gradient */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(157, 139, 255, 0.3);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#generateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(157, 139, 255, 0.4);
+  background: linear-gradient(135deg, #8d7bff, #6b5bbf);
+}
+
+#generateBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(157, 139, 255, 0.3);
+}
+
+#generateBtn:disabled {
+  background: #d8d0ff;  /* Lighter pastel purple when disabled */
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Poster Container */
+#poster {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 10px 30px rgba(123, 107, 207, 0.15);  /* Matching purple tint */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+/* Status Message */
+#status {
+  text-align: center;
+  margin: 15px 0;
+  min-height: 24px;
+  color: #8d7bff;  /* Matching button color */
+  font-style: italic;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
